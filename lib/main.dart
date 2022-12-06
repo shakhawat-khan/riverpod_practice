@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_isar_practice/provider/future_provider.dart';
+import 'package:riverpod_isar_practice/provider/notifier_provider.dart';
 import 'package:riverpod_isar_practice/provider/provider.dart';
 import 'package:riverpod_isar_practice/provider/state_provider.dart';
 
@@ -62,6 +64,23 @@ class Home extends StatelessWidget {
               Navigator.push(context, MaterialPageRoute(builder: (context)=> StateProviderTest() ));
 
             }, child: Text('State provider')),
+
+
+            ElevatedButton(onPressed: (){
+
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> FutureProviderTest() ));
+
+            }, child: Text('Future provider')),
+
+
+            ElevatedButton(onPressed: (){
+
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> CounterWidget() ));
+
+            }, child: Text('Notifier provider')),
+
+
+
 
 
 
